@@ -1,0 +1,100 @@
+{
+  "_fv": 43,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 361,
+    "height": 239,
+    "inventoryOffsetX": -92,
+    "inventoryOffsetY": 28,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "vtronpad.png",
+          "use1Xscale": false,
+          "x": 33,
+          "y": -1
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_balance",
+          "text": {
+            "fixedValue": "Balance:"
+          },
+          "color": {
+            "value": -39373,
+            "falpha": 0.0
+          },
+          "x": 42,
+          "y": 8
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_varvtronusername",
+          "text": {
+            "fixedValue": "<VAR:VtronUsername>",
+            "name": "VtronUsername"
+          },
+          "color": {
+            "value": -16776961,
+            "falpha": 0.0
+          },
+          "x": 231,
+          "y": 17
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "vtronlogo.png",
+          "use1Xscale": false,
+          "x": 339,
+          "y": 8
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_vtron_credits",
+          "text": {
+            "fixedValue": "",
+            "name": "VtronCredits"
+          },
+          "color": {
+            "value": -39424,
+            "falpha": 0.0
+          },
+          "x": 87,
+          "y": 8
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "PlayerModelRenderer"
+          },
+          "scale": 30,
+          "rotationX": 0,
+          "followMouseMovement": false,
+          "x": 312,
+          "y": 35
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

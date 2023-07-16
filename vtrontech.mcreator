@@ -1,0 +1,847 @@
+{
+  "mod_elements": [
+    {
+      "name": "Vtron",
+      "type": "gui",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vtron",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/vtrontech/world/inventory/VtronMenu.java",
+          "src/main/java/net/mcreator/vtrontech/client/gui/VtronScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "UserRegister",
+      "type": "gui",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "user_register",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/vtrontech/world/inventory/UserRegisterMenu.java",
+          "src/main/java/net/mcreator/vtrontech/network/UserRegisterButtonMessage.java",
+          "src/main/java/net/mcreator/vtrontech/client/gui/UserRegisterScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "SaveUsername",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "save_username",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/vtrontech/procedures/SaveUsernameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VtronPadItemRightclicked",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vtron_pad_item_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/vtrontech/procedures/VtronPadItemRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VtronPadItem",
+      "type": "item",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vtron_pad_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/vtrontech/item/VtronPadItemItem.java",
+          "src/main/resources/assets/vtrontech/models/item/vtron_pad_item.json"
+        ]
+      }
+    },
+    {
+      "name": "VpadOpenOnKeyPressed",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vpad_open_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/vtrontech/procedures/VpadOpenOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VpadOpen",
+      "type": "keybind",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vpad_open",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/vtrontech/network/VpadOpenMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "VtronUsername",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vtron_username",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/vtrontech/procedures/VtronUsernameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VtronCredits",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vtron_credits",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/vtrontech/procedures/VtronCreditsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PlayerModelRenderer",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_model_renderer",
+      "metadata": {
+        "return_type": "entity",
+        "files": [
+          "src/main/java/net/mcreator/vtrontech/procedures/PlayerModelRendererProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AdaptiveSuit",
+      "type": "item",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adaptive_suit",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/vtrontech/item/AdaptiveSuitItem.java",
+          "src/main/resources/assets/vtrontech/models/item/adaptive_suit.json"
+        ]
+      },
+      "path": "~/Gadgets"
+    },
+    {
+      "name": "VtronGadgets",
+      "type": "tab",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vtron_gadgets",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Gadgets"
+    },
+    {
+      "name": "ShieldGenerator",
+      "type": "item",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shield_generator",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/vtrontech/item/ShieldGeneratorItem.java",
+          "src/main/resources/assets/vtrontech/models/item/shield_generator.json"
+        ]
+      },
+      "path": "~/Gadgets"
+    },
+    {
+      "name": "Jetboots",
+      "type": "item",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jetboots",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/vtrontech/models/item/jetboots.json",
+          "src/main/java/net/mcreator/vtrontech/item/JetbootsItem.java"
+        ]
+      },
+      "path": "~/Gadgets"
+    },
+    {
+      "name": "InfraredGlasses",
+      "type": "item",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infrared_glasses",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/vtrontech/models/item/infrared_glasses.json",
+          "src/main/java/net/mcreator/vtrontech/item/InfraredGlassesItem.java"
+        ]
+      },
+      "path": "~/Gadgets"
+    },
+    {
+      "name": "Breather",
+      "type": "item",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "breather",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/vtrontech/item/BreatherItem.java",
+          "src/main/resources/assets/vtrontech/models/item/breather.json"
+        ]
+      },
+      "path": "~/Gadgets"
+    },
+    {
+      "name": "ThermalSkin",
+      "type": "item",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thermal_skin",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/vtrontech/models/item/thermal_skin.json",
+          "src/main/java/net/mcreator/vtrontech/item/ThermalSkinItem.java"
+        ]
+      },
+      "path": "~/Gadgets"
+    },
+    {
+      "name": "RadiationProofVest",
+      "type": "item",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radiation_proof_vest",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/vtrontech/item/RadiationProofVestItem.java",
+          "src/main/resources/assets/vtrontech/models/item/radiation_proof_vest.json"
+        ]
+      },
+      "path": "~/Gadgets"
+    },
+    {
+      "name": "VirtualStorageSystem",
+      "type": "item",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "virtual_storage_system",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/vtrontech/item/VirtualStorageSystemItem.java",
+          "src/main/resources/assets/vtrontech/models/item/virtual_storage_system.json"
+        ]
+      },
+      "path": "~/Gadgets"
+    },
+    {
+      "name": "ShowSlots",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "show_slots",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/vtrontech/procedures/ShowSlotsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Gadgets"
+    },
+    {
+      "name": "Gadgets",
+      "type": "gui",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gadgets",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/vtrontech/network/GadgetsSlotMessage.java",
+          "src/main/java/net/mcreator/vtrontech/client/gui/GadgetsScreen.java",
+          "src/main/java/net/mcreator/vtrontech/world/inventory/GadgetsMenu.java"
+        ]
+      },
+      "path": "~/Gadgets"
+    },
+    {
+      "name": "ShieldgeneratorDetect",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shieldgenerator_detect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/vtrontech/procedures/ShieldgeneratorDetectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Gadgets/GadgetsEquiped"
+    },
+    {
+      "name": "JetBootsDetect",
+      "type": "procedure",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jet_boots_detect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/vtrontech/procedures/JetBootsDetectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Gadgets/GadgetsEquiped"
+    },
+    {
+      "name": "InfraredVisorDetect",
+      "type": "procedure",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infrared_visor_detect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/vtrontech/procedures/InfraredVisorDetectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Gadgets/GadgetsEquiped"
+    },
+    {
+      "name": "BreatherDetect",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "breather_detect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/vtrontech/procedures/BreatherDetectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Gadgets/GadgetsEquiped"
+    },
+    {
+      "name": "ThermalSkinDetect",
+      "type": "procedure",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thermal_skin_detect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/vtrontech/procedures/ThermalSkinDetectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Gadgets/GadgetsEquiped"
+    },
+    {
+      "name": "VirtualStorageDetect",
+      "type": "procedure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "virtual_storage_detect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/vtrontech/procedures/VirtualStorageDetectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Gadgets/GadgetsEquiped"
+    },
+    {
+      "name": "RadiationProofVestDetect",
+      "type": "procedure",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radiation_proof_vest_detect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/vtrontech/procedures/RadiationProofVestDetectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Gadgets/GadgetsEquiped"
+    },
+    {
+      "name": "AdaptiveSuitDetect",
+      "type": "procedure",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adaptive_suit_detect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/vtrontech/procedures/AdaptiveSuitDetectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Gadgets/GadgetsEquiped"
+    },
+    {
+      "name": "UnderwaterBreather",
+      "type": "procedure",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "underwater_breather",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/vtrontech/procedures/UnderwaterBreatherProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Gadgets/Breather"
+    },
+    {
+      "name": "Toxic",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/vtrontech/potion/ToxicMobEffect.java"
+        ]
+      },
+      "path": "~/toxic gas"
+    },
+    {
+      "name": "ToxicGasMobplayerCollidesBlock",
+      "type": "procedure",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_gas_mobplayer_collides_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/vtrontech/procedures/ToxicGasMobplayerCollidesBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/toxic gas"
+    },
+    {
+      "name": "ToxicGas",
+      "type": "fluid",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_gas",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/vtrontech/fluid/types/ToxicGasFluidType.java",
+          "src/main/resources/assets/vtrontech/blockstates/toxic_gas.json",
+          "src/main/java/net/mcreator/vtrontech/fluid/ToxicGasFluid.java",
+          "src/main/resources/assets/vtrontech/models/item/toxic_gas_bucket.json",
+          "src/main/java/net/mcreator/vtrontech/block/ToxicGasBlock.java",
+          "src/main/resources/assets/vtrontech/models/block/toxic_gas.json"
+        ]
+      },
+      "path": "~/toxic gas"
+    },
+    {
+      "name": "VtronEntities",
+      "type": "tab",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vtron_entities",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Biomes"
+    },
+    {
+      "name": "LilyValley",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lily_valley",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/vtrontech/world/biome/LilyValleyBiome.java"
+        ]
+      },
+      "path": "~/Biomes/Lily Valley"
+    },
+    {
+      "name": "Sunbather",
+      "type": "animatedentity",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sunbather",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/vtrontech/client/renderer/SunbatherRenderer.java",
+          "src/main/resources/data/vtrontech/forge/biome_modifier/sunbather_biome_modifier.json",
+          "src/main/resources/assets/vtrontech/models/item/sunbather_spawn_egg.json",
+          "src/main/java/net/mcreator/vtrontech/entity/model/SunbatherModel.java",
+          "src/main/java/net/mcreator/vtrontech/entity/SunbatherEntity.java"
+        ]
+      },
+      "path": "~/Biomes/Lily Valley/Sunbather"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "VtronCredits",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "VtronUsername",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "valor0"
+    },
+    {
+      "name": "VtronPadAcquired",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "ShieldGenerator",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "JetBoots",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "AdaptiveSuit",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "InfraredVisor",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "Breather",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "ThermalSkin",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "VirtualStorageSystem",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "RadiationProofVest",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "AdaptiveSuitDetect",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "SuitEnergy",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "fluid.vtrontech.toxic_gas": "Toxic Gas",
+      "item.vtrontech.vtron_pad_item": "Vtron Pad Item",
+      "biome.vtrontech.lily_valley": "Lily Valley",
+      "item.vtrontech.shield_generator": "Shield Generator",
+      "gui.vtrontech.gadgets.label_gadgets_inactive": "Gadgets Inoperative",
+      "itemGroup.tabvtron_entities": "Vtron Entities",
+      "gui.vtrontech.vtron.label_varvtroncredits": "\u003cVAR:VtronCredits\u003e",
+      "gui.vtrontech.user_register.label_in_order_to_access": "in order to access",
+      "gui.vtrontech.vtron.label_balance": "Balance:",
+      "key.vtrontech.vpad_open": "Vpad Open",
+      "effect.vtrontech.toxic": "toxic",
+      "item.vtrontech.virtual_storage_system": "Virtual Storage System",
+      "gui.vtrontech.user_register.label_welcome_to_vtron": "WELCOME TO VTRON",
+      "item.vtrontech.infrared_glasses": "Infrared Glasses",
+      "gui.vtrontech.user_register.label_please_enter_an_username": "Please enter an Username",
+      "item.vtrontech.thermal_skin": "Thermal Skin",
+      "gui.vtrontech.gadgets.label_no_suit_detected": "No Suit Detected, ",
+      "gui.vtrontech.vtron.label_varvtronusername": "\u003cVAR:VtronUsername\u003e",
+      "item.vtrontech.sunbather_spawn_egg": "Sunbather Spawn Egg",
+      "item.vtrontech.jetboots": "Jetboots",
+      "block.vtrontech.toxic_gas": "Toxic Gas",
+      "itemGroup.tabvtron_gadgets": "Vtron Gadgets",
+      "gui.vtrontech.user_register.Username": "",
+      "entity.vtrontech.sunbather": "Sunbather",
+      "item.vtrontech.adaptive_suit": "Adaptive Suit",
+      "item.vtrontech.radiation_proof_vest": "Radiation Proof Vest",
+      "gui.vtrontech.user_register.button_register": "Register",
+      "item.vtrontech.breather": "Breather"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Gadgets",
+        "children": [
+          {
+            "name": "GadgetsEquiped",
+            "children": []
+          },
+          {
+            "name": "Breather",
+            "children": []
+          },
+          {
+            "name": "Infrared Glasses",
+            "children": []
+          },
+          {
+            "name": "Jetboots",
+            "children": []
+          },
+          {
+            "name": "Radiation Proof Vest",
+            "children": []
+          },
+          {
+            "name": "Shield Generator",
+            "children": []
+          },
+          {
+            "name": "Virtual Storage System",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "toxic gas",
+        "children": []
+      },
+      {
+        "name": "Biomes",
+        "children": [
+          {
+            "name": "Lily Valley",
+            "children": [
+              {
+                "name": "Sunbather",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "vtrontech",
+    "modName": "VtronTech",
+    "version": "1.0.0",
+    "author": "MaxDog",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "curios_api",
+      "geckolib"
+    ],
+    "currentGenerator": "forge-1.19.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.vtrontech",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300224119
+}

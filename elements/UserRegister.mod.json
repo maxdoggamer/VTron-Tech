@@ -1,0 +1,101 @@
+{
+  "_fv": 43,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 361,
+    "height": 239,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "vtronpad.png",
+          "use1Xscale": false,
+          "x": 33,
+          "y": -1
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "",
+          "name": "Username",
+          "width": 162,
+          "height": 20,
+          "x": 132,
+          "y": 71
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_please_enter_an_username",
+          "text": {
+            "fixedValue": "Please enter an Username"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 150,
+          "y": 53
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_welcome_to_vtron",
+          "text": {
+            "fixedValue": "WELCOME TO VTRON"
+          },
+          "color": {
+            "value": -13369345,
+            "falpha": 0.0
+          },
+          "x": 168,
+          "y": 44
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_in_order_to_access",
+          "text": {
+            "fixedValue": "in order to access"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 168,
+          "y": 62
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_register",
+          "text": "Register",
+          "onClick": {
+            "name": "SaveUsername"
+          },
+          "width": 67,
+          "height": 20,
+          "x": 177,
+          "y": 89
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

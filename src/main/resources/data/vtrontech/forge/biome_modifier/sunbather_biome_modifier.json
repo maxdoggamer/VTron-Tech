@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "vtrontech:lily_valley",
+  "spawners": {
+    "type": "vtrontech:sunbather",
+    "weight": 15,
+    "minCount": 4,
+    "maxCount": 4
+  }
+}

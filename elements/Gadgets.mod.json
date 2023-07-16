@@ -1,0 +1,320 @@
+{
+  "_fv": 43,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 226,
+    "height": 241,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:AdaptiveSuit"
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "color": {
+            "value": -16737793,
+            "falpha": 0.0
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 204,
+          "y": 8
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:ShieldGenerator"
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 1,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": false,
+          "onSlotChanged": {
+            "name": "ShieldgeneratorDetect"
+          },
+          "x": 132,
+          "y": 35
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:Jetboots"
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 2,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": false,
+          "onSlotChanged": {
+            "name": "JetBootsDetect"
+          },
+          "x": 132,
+          "y": 53
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "shieldgenerator.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowSlots"
+          },
+          "x": 132,
+          "y": 35
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "adaptivesuit.png",
+          "use1Xscale": false,
+          "x": 204,
+          "y": 8
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "jetboots.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowSlots"
+          },
+          "x": 132,
+          "y": 53
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:InfraredGlasses"
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 3,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": false,
+          "onSlotChanged": {
+            "name": "InfraredVisorDetect"
+          },
+          "x": 132,
+          "y": 71
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:Breather"
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 4,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": false,
+          "onSlotChanged": {
+            "name": "BreatherDetect"
+          },
+          "x": 222,
+          "y": 35
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:ThermalSkin"
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 5,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": false,
+          "onSlotChanged": {
+            "name": "ThermalSkinDetect"
+          },
+          "x": 222,
+          "y": 53
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:VirtualStorageSystem"
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 6,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": false,
+          "onSlotChanged": {
+            "name": "VirtualStorageDetect"
+          },
+          "x": 222,
+          "y": 71
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:RadiationProofVest"
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 7,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": false,
+          "onSlotChanged": {
+            "name": "RadiationProofVestDetect"
+          },
+          "x": 177,
+          "y": 89
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "infraredvisor.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowSlots"
+          },
+          "x": 132,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "breather.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowSlots"
+          },
+          "x": 222,
+          "y": 35
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "thermalskin.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowSlots"
+          },
+          "x": 222,
+          "y": 53
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "virtualstoragesystem.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowSlots"
+          },
+          "x": 222,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "radiationproofvest.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowSlots"
+          },
+          "x": 178,
+          "y": 90
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_no_suit_detected",
+          "text": {
+            "fixedValue": "No Suit Detected, "
+          },
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "ShowSlots"
+          },
+          "x": 222,
+          "y": 8
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_gadgets_inactive",
+          "text": {
+            "fixedValue": "Gadgets Inoperative"
+          },
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "ShowSlots"
+          },
+          "x": 222,
+          "y": 17
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

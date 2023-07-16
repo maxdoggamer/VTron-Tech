@@ -1,0 +1,11 @@
+{
+  "_fv": 43,
+  "_type": "tab",
+  "definition": {
+    "name": "Vtron Entities",
+    "icon": {
+      "value": "Items.WARDEN_SPAWN_EGG"
+    },
+    "showSearch": true
+  }
+}

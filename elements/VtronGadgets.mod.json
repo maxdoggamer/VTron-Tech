@@ -1,0 +1,11 @@
+{
+  "_fv": 43,
+  "_type": "tab",
+  "definition": {
+    "name": "Vtron Gadgets",
+    "icon": {
+      "value": "CUSTOM:AdaptiveSuit"
+    },
+    "showSearch": false
+  }
+}

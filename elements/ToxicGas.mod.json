@@ -1,0 +1,46 @@
+{
+  "_fv": 43,
+  "_type": "fluid",
+  "definition": {
+    "name": "Toxic Gas",
+    "bucketName": "Toxic Gas Bucket",
+    "textureStill": "toxicgas",
+    "textureFlowing": "toxicgas",
+    "tintType": "No tint",
+    "canMultiply": false,
+    "flowRate": 4,
+    "levelDecrease": 1,
+    "slopeFindDistance": 1,
+    "spawnParticles": false,
+    "dripParticle": {
+      "value": "EXPLOSION_NORMAL"
+    },
+    "flowStrength": 0.0,
+    "luminosity": 0,
+    "density": -1,
+    "viscosity": 0,
+    "temperature": 300,
+    "type": "WATER",
+    "generateBucket": false,
+    "textureBucket": "",
+    "creativeTab": {
+      "value": "CUSTOM:VtronGadgets"
+    },
+    "emptySound": {
+      "value": ""
+    },
+    "rarity": "COMMON",
+    "specialInfo": [],
+    "resistance": 100.0,
+    "luminance": 0,
+    "lightOpacity": 0,
+    "emissiveRendering": false,
+    "tickRate": 10,
+    "flammability": 20,
+    "fireSpreadSpeed": 100,
+    "colorOnMap": "AIR",
+    "onEntityCollides": {
+      "name": "ToxicGasMobplayerCollidesBlock"
+    }
+  }
+}
